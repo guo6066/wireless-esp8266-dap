@@ -81,7 +81,7 @@ void mdns_setup() {
 }
 
 void app_main() {
-   ESP_LOGI("Update", "This is a New FW!!!");
+   ESP_LOGI("Update", "111-This is a New FW!!!");
     // struct rst_info *rtc_info = system_get_rst_info();
 
     // os_printf("reset reason: %x\n", rtc_info->reason);
@@ -150,4 +150,6 @@ void app_main() {
 #if (USE_UART_BRIDGE == 1)
     xTaskCreate(uart_bridge_task, "uart_server", UART_BRIDGE_TASK_STACK_SIZE, NULL, 2, NULL);
 #endif
+
+ESP_LOGI("Update", "222-This is a New FW!!!");
 }
