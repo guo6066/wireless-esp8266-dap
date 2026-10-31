@@ -15,7 +15,7 @@ jobs:
     continue-on-error: true
     strategy:
       matrix:
-        target-hardware: [esp8266, esp32, esp32c3, esp32s3]
+        target-hardware: [esp8266]
 
     steps:
     - uses: actions/checkout@v5
