@@ -81,7 +81,7 @@ void mdns_setup() {
 }
 
 void app_main() {
-   ESP_LOGI("Update", "111-This is a New FW!!!");
+   os_printf("Update , 111-This is a New FW!!!");
     // struct rst_info *rtc_info = system_get_rst_info();
 
     // os_printf("reset reason: %x\n", rtc_info->reason);
