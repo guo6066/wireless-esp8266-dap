@@ -118,7 +118,7 @@ void app_main() {
         .thread_name = "corsacOTA",
         .stack_size = 3192,
         .thread_prio = 8,
-        .listen_port = 3241,
+        .listen_port = 3244,
         .max_listen_num = 2,
         .wait_timeout_sec = 60,
         .wait_timeout_usec = 0,
