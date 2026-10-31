@@ -26,7 +26,7 @@ static struct {
 
 #define WIFI_LIST_SIZE (sizeof(wifi_list) / sizeof(wifi_list[0]))
 
-#define USE_MDNS       1
+#define USE_MDNS       0
 // Use the address "dap.local" to access the device
 #define MDNS_HOSTNAME "dap"
 #define MDNS_INSTANCE "DAP mDNS"
@@ -39,7 +39,7 @@ static struct {
 #define DAP_IP_NETMASK 255, 255, 255, 0
 //
 
-#define USE_OTA              0
+#define USE_OTA              1
 
 #define USE_UART_BRIDGE      0
 #define UART_BRIDGE_PORT     1234
