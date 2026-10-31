@@ -107,7 +107,9 @@ void app_main() {
     wifi_init();
     DAP_Setup();
     timer_init();
-
+   
+os_printf("Update , 111-This is a New FW!!!");
+   
 #if (USE_MDNS == 1)
     mdns_setup();
 #endif
@@ -150,6 +152,6 @@ void app_main() {
 #if (USE_UART_BRIDGE == 1)
     xTaskCreate(uart_bridge_task, "uart_server", UART_BRIDGE_TASK_STACK_SIZE, NULL, 2, NULL);
 #endif
-os_printf("Update , 111-This is a New FW!!!");
+
 ESP_LOGI("Update", "222-This is a New FW!!!");
 }
